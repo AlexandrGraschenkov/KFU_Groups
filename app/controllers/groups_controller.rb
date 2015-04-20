@@ -6,4 +6,7 @@ class GroupsController < ApplicationController
   	# render json: {facultets: Facultet.all, groups: Group.all}
   end
 
+  def test
+  	render json: {test: "yes"}
+  end
 end
