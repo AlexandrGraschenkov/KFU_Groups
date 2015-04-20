@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   match '/api/groups' => 'groups#get_groups', :via => [:get]
-  match '/test' => 'groups#test', :via => [:get]
+  match '/api/groups-db' => 'groups#generate_groups_json_from_db', :via => [:get]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
