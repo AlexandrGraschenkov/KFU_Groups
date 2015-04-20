@@ -6,6 +6,6 @@ class GroupsController < ApplicationController
   end
 
   def generate_groups_json_from_db
-  	render json: {facultets: Facultet.all, groups: Group.all}
+  	render json: {last_modified: Time.now.to_time.to_i,facultets: Facultet.all, groups: Group.all}
   end
 end
